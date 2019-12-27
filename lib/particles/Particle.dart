@@ -19,6 +19,8 @@ class Particle {
     _paint = Paint()..color = color;
   }
 
+  double get life => _life;
+
   update() {
     _paint.color = _paint.color.withOpacity((_life.toDouble() / 100));
     _life -= _fadeVelocity;

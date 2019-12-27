@@ -9,9 +9,9 @@ class Game extends BaseGame {
 
   @override
   render(Canvas canvas){
+    super.render(canvas);
     Rect rect = Rect.fromLTWH(0, 0, size.width, size.height);
     canvas.drawRect(rect, _backgroundColor);
-    super.render(canvas);
   }
 
   @override
