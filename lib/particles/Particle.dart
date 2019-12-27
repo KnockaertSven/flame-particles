@@ -24,7 +24,7 @@ class Particle {
   update() {
     _paint.color = _paint.color.withOpacity((_life.toDouble() / 100));
     _life -= _fadeVelocity;
-    position.translate(
+    position = position.translate(
       (direction.dx * _velocity.dx),
       (direction.dy * _velocity.dy),
     );
