@@ -23,6 +23,10 @@ class Game extends BaseGame {
   @override
   update(double t){
     super.update(t);
+    _particleManager.addParticle(
+      position: Offset(size.width/2, size.height/2),
+      direction: Offset(0, -1),
+    );
     _particleManager.update();
   }
 }
