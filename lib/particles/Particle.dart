@@ -17,7 +17,6 @@ class Particle {
     Color color = Colors.blue,
   }) {
     _paint = Paint()..color = color;
-    Offset x = Offset(1.0, 2.0);
   }
 
   update() {
